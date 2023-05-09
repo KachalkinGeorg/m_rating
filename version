@@ -1,0 +1,20 @@
+;
+; Version description file for plugin @@ Next Geration CMS
+;
+
+ID: m_rating
+Name: Мульти Рейтинг новостей
+Version: 0.1
+Acts: ppages, news_full, news_short, news_search
+Actions: rpc;lib/librpc.php
+File: m_rating.php
+Install: install.php
+Deinstall: deinstall.php
+Config: config.php
+Type: plugin
+Description: Мульти Рейтинг различных характеристик публикации
+Author: KachalkinGeorg
+Icon: <i class='fa fa-star-half-o fa-2x'></i>
+Title: Мульти Рейтинг новостей
+Preinstall: default_no
+Information: Данный плагин добавляет на сайт новый тип рейтинга, который позволяет выставлять оценку за различные характеристики публикации.
