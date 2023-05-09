@@ -11,13 +11,13 @@
 
 -------------------
 Просмотр в полной новости:
-![](https://github.com/KachalkinGeorg/m_rating/blob/main/Screenshot_1?raw=true)
+![](https://github.com/KachalkinGeorg/m_rating/blob/main/Screenshot_1.jpg?raw=true)
 
 При клики на рейтиинг:
-![](https://github.com/KachalkinGeorg/m_rating/blob/main/Screenshot_2?raw=true)
+![](https://github.com/KachalkinGeorg/m_rating/blob/main/Screenshot_2.jpg?raw=true)
 
 После обновления страницы:
-![](https://github.com/KachalkinGeorg/m_rating/blob/main/Screenshot_3?raw=true)
+![](https://github.com/KachalkinGeorg/m_rating/blob/main/Screenshot_3.jpg?raw=true)
 
 -------------------
 Кто желает поблагодарит автора, за данный плагин:
