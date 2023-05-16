@@ -29,45 +29,47 @@ $(document).ready(function(){
 		ngHideLoading();
 		$(".m-rating-rate").removeClass('m-load');
 		if(d.error) showAlert(d.error);
-		else $('.m-rating-area').html(d.html);
+		$('.m-rating-area').html(d.html);
 		showAlert(d.error);
 	});
   });
 });
 
 </script>
-<div class="m-rating-area" data-id="{{id}}">
-	<div class="m-rating-rate">
-		{{rate}}
-		<div class="m-rating-rate-votes">{{rate}} оценок</div>
+
+<div class="m-rating-rate">
+	{{rate}}
+	<div class="m-rating-rate-votes">{{votes}} голосов</div>
+</div>
+
+<div class="m-rating-column">
+	<div class="m-rating-field">
+		<div class="m-rating-value" title="{{tvideo}} голосов">{{rvideo}}</div>
+		Графика:
+		<ul class="m-rating" data-area="video">{{video}}</ul>
 	</div>
 
-	<div class="m-rating-column">
-		<div class="m-rating-field">
-			<div class="m-rating-value" title="{{tvideo}} голосов">{{rvideo}}</div>
-			Графика:
-			<ul class="m-rating" data-area="video">{{video}}</ul>
-		</div>
+	<div class="m-rating-field">
+		<div class="m-rating-value" title="{{tgameplay}} голосов">{{rgameplay}}</div>
+		Геймплей:
+		<ul class="m-rating" data-area="gameplay">{{gameplay}}</ul>
+	</div>
+</div>
 
-		<div class="m-rating-field">
-			<div class="m-rating-value" title="{{tgameplay}} голосов">{{rgameplay}}</div>
-			Геймплей:
-			<ul class="m-rating" data-area="gameplay">{{gameplay}}</ul>
-		</div>
+<div class="m-rating-column">
+	<div class="m-rating-field">
+		<div class="m-rating-value" title="{{tsound}} голосов">{{rsound}}</div>
+		Озвучка:
+		<ul class="m-rating" data-area="sound">{{sound}}</ul>
 	</div>
 
-	<div class="m-rating-column">
-		<div class="m-rating-field">
-			<div class="m-rating-value" title="{{tsound}} голосов">{{rsound}}</div>
-			Озвучка:
-			<ul class="m-rating" data-area="sound">{{sound}}</ul>
-		</div>
-
-		<div class="m-rating-field">
-			<div class="m-rating-value" title="{{tatm}} голосов">{{ratm}}</div>
-			Атмосфера:
-			<ul class="m-rating" data-area="atm">{{atm}}</ul>
-		</div>
+	<div class="m-rating-field">
+		<div class="m-rating-value" title="{{tatm}} голосов">{{ratm}}</div>
+		Атмосфера:
+		<ul class="m-rating" data-area="atm">{{atm}}</ul>
 	</div>
+</div>
 
+<div class="m-rating-itog">
+	<center>Оценка: <b class="m-rating-itog-rateval">{{rate}}</b> из 10 <i>(голосов: <span class="m-rating-itog-votes">{{votes}}</span>)</i></center>
 </div>

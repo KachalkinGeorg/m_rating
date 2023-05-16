@@ -28,7 +28,7 @@ function plugin_m_rating_install($action) {
 				array('action' => 'cmodify', 'name' => 'news_id', 'type' => 'int(6)', 'params' => 'NOT NULL'),
 				array('action' => 'cmodify', 'name' => 'ip', 'type' => 'varchar(15)', 'params' => 'NOT NULL'),
 				array('action' => 'cmodify', 'name' => 'member', 'type' => 'varchar(70)', 'params' => 'NOT NULL'),
-				array('action' => 'cmodify', 'name' => 'area', 'type' => 'varchar(255)', 'params' => 'NOT NULL')
+				array('action' => 'cmodify', 'name' => 'area', 'type' => 'text', 'params' => 'NOT NULL')
 			)
 		)
 	);
@@ -44,6 +44,16 @@ function plugin_m_rating_install($action) {
 			} else {
 				return false;
 			}
+			// Now we need to set some default params
+			$params = array(
+				'localsource'   => 1,
+				'revote' 		=> 0,
+				'guest'   		=> 0,
+			);
+			foreach ($params as $k => $v) {
+				extra_set_param('m_rating', $k, $v);
+			}
+			extra_commit_changes();
 			break;
 	}
 
