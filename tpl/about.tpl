@@ -12,7 +12,7 @@
 	<p>- Обновление рейтинга в реальном времени</p>
 	<br>
 	<dt>Как подключить плагин:</dt>
-	<dd>руководство использования описано <a href="/engine/includes/showinfo.php?mode=plugin&item=readme&plugin=block_online" title="Открыть настройки" target="_blank">здесь</a></dd>
+	<dd>руководство использования описано <a href="/engine/includes/showinfo.php?mode=plugin&item=readme&plugin=m_rating" title="Открыть настройки" target="_blank">здесь</a></dd>
 </dl>
 <div class="panel-body" style="font-family: Franklin Gothic Medium;text-transform: uppercase;color: #9f9f9f;">Реквезиты</div>
 <dl>
