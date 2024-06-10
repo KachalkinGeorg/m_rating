@@ -21,9 +21,9 @@ function mRatingGenerate($params) {
 	$log = $mysql->record('SELECT * FROM ' . prefix . '_m_rating WHERE news_id ='.db_squote($news_id).' AND '.$where.'' );
 	if($log['news_id']){
 		$log['area'] = explode("|",$log['area']);
-		if(!pluginGetVariable('m_rating', 'revote')){
+		if(!pluginGetVariable('m_rating', 'revote'))
 			if(in_array($area,$log['area'])) die("{\"error\": \"Вы уже голосовали\"}");
-		}
+		
 		else{
 			$log['area'][] = $area;
 			$log['area'] = implode("|",$log['area']);

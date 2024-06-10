@@ -47,7 +47,7 @@ class MRatingFilter extends NewsFilter {
     function showNews($newsID, $SQLnews, &$tvars, $mode = array()) {
 		global $config, $twig, $template, $userROW, $ip, $mysql, $lang;
 		
-		$row = $mysql->record("select * from " . prefix . "_news where id = " . db_squote($news_id)." LIMIT 1");
+		$row = $mysql->record("select * from " . prefix . "_news where id = " . db_squote($newsID)." LIMIT 1");
 		$rating = new m_rating($row['m_rating']);
 	
 		$tvars['vars']['m_rating'] = '<div class="m-rating-area ignore-select" data-id="'.$newsID.'">'.m_rating_update($newsID).'</div>';
